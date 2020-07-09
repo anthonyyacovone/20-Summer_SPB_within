@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Experiment Questionaire </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    p {
+      text-align: left;
+      font-size: large;
+    }
+
+    a {
+      text-decoration: none;
+    }
+      
+    form{
+      margin: -100 auto 10;
+      width: 65%;
+      clear: both;
+      padding: 2%;
+      border: 1px;
+      border-style: solid;
+      background-color: black;
+      padding-top: 1em;
+    }
+    
+    body {
+      margin-top: 1em;
+      
+    }
+
+    input[type=submit] {
+      width: 135px;
+      height: 70px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+
+<body class="body">
+
+<!--
+BEFORE THE PAGE CONTENT
+You might want to cache the images you are using in the experiment
+if timings are going to be recorded during the experiment.
+Below is an example of how to load an image without showing it.
+-->
+<div style="display:none">
+  <!-- List images here in the same syntax -->
+  <!-- <img src = "___image src____" /> -->
+  <img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />
+</div>
+
+
+
+<!-- Start of the actual, visible body of the file -->
+<form style="width: 40em;">
+
+<h2><strong>Instructions</strong></h2>
+ <hr><br>
+<p><center>In this experiment, you will listen to sentences and then answer questions about what you heard.</center></p><br>
+<p><span style="text-decoration: underline;"><b>The context of the sentences: Children playing with toy animals!</b></span></p>
+<p>Each sentence will describe something that a child is acting out with a toy animal. For example, you may hear, <em>"Jane loves to make pastries with the moose!"</em> In this sentence, you could imagine Jane making fake treats with her moose stuffed animal.&nbsp;</p>
+<p>Another example: <em>"The cat really likes pizza for breakfast."</em> We may ask you a question like...</p>
+<p>
+  <table>
+<tbody>
+<tr>
+<td><p><strong>Q1:&nbsp;</strong>Who really likes pizza for breakfast?</p></td>
+<td><p><strong>&nbsp;A:</strong> The cat!&nbsp;</p></td>
+</tr>
+<tr>
+<td><p><strong>Q2:</strong> What does the cat really like?</p></td>
+<td><p><strong>&nbsp;A:</strong> Pizza for breakfast! (Notice here that 'Pizza' wouldn't be a full answer!&nbsp;</p></td>
+</tr>
+<tr>
+<td><p><strong>Q3:</strong> What does the cat like for breakfast?</p></td>
+<td><p><strong>&nbsp;A:</strong> Pizza! (Notice here that 'Pizza for breakfast' would be redundant!&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+ </p>
+<p>After listening to the sentence, you will hit continue to go to the question screen. Some questions require MORE information to be a complete answer (Q2) while others require LESS (Q3). 
+  So please answer carefully and <b>DO NOT JUST RETYPE THE SENTENCE</b>. You will have <strong>as much time as needed</strong> to fully read the question and provide your answer. 
+  Simply type your answer into the input box and then hit 'Enter'.&nbsp;</p>
+<hr>
+<div>
+<p><strong>Instruction Comprehesion Questions:&nbsp;</strong><br /><em>1. Will the sentences involve actual animals or toy animals that children are playing with?</em><br /><input class="obligatory" name="question1" type="radio" value="left" /><label for="q1left"> Actual animals!</label>&nbsp;<input name="question1" type="radio" value="right" /><label for="q1right">&nbsp;The animals are actually child toys!&nbsp;</label></p>
+<p><em>2. Do you have a set time period to answer the question?</em><br /><input class="obligatory" name="question2" type="radio" value="left" /><label for="q2left"> Yes</label> <input name="question2" type="radio" value="right" /><label for="q2right">No</label></p>
+<p><em>3. Will some answers require different amount of information to be complete?</em><br /><input class="obligatory" name="question3" type="radio" value="left" /><label for="q3left"> Yes</label> <input name="question3" type="radio" value="right" /><label for="q3right">No</label></p>
+<p><em>4. I will not just retype the sentences but rather provide only the necessary information in my answer!</em><br /><input class="obligatory" name="question4" type="radio" value="left" /><label for="q4left"> True!</label> <input name="question4" type="radio" value="right" /><label for="q4right">False!</label></p>
+
+  </div>
+  
+<tr>
+  <td colspan="2" style="padding-bottom: 1em;"><p><input type="text" style="width: 400px; height: 70px; color: red; font-size: large; font-weight: bold;" class="obligatory" name="consent" onfocus="if(this.value == 'Please type: Continue') { this.value = ''; }" value="Please type: Continue"/></p></td>
+
+<p>Then press Enter to continue!</p>
+
+</tr>
+</form>
+  </html> 

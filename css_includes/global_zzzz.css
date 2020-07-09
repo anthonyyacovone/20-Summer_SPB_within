@@ -1,0 +1,48 @@
+.Message-continue-link:visited {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+p.Message-Message {
+  font-size: xx-large;
+  text-align: center;  
+  }
+
+p.Form-Form {
+  text-align: center;
+  font-size: xx-large;
+}
+
+body {
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: black;
+    margin-left: 0;
+    margin-top: 7em;
+    font-size: xx-large;
+}
+
+div {
+  font-size: xx-large;
+}
+
+input {
+  font-size: xx-large;
+  
+}
+
+p.practice-box {
+    color: gold;
+    height: 1.5em;
+    padding-bottom: 1em;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+p.AY_Form-AY_Form {
+  text-align: center;
+  font-size: small;
+}

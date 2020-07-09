@@ -1,0 +1,124 @@
+<head>
+  <title> Experiment Questionaire </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    p {
+      text-align: left;
+      font-size: large;
+    }
+
+    a {
+      text-decoration: none;
+    }
+      
+    form{
+      margin: -100 auto 10;
+      width: 65%;
+      clear: both;
+      padding: 2%;
+      border: 1px;
+      border-style: solid;
+      background-color: black;
+      padding-top: 1em;
+    }
+    
+    body {
+      margin-top: 1em;
+      
+    }
+    
+    textarea {
+      font-size: large; 
+    }
+    
+    input[type=submit] {
+      width: 135px;
+      height: 70px;
+      cursor:pointer;
+    }
+    
+    
+</style>
+<form style="width: 90%; margin-top: 2em;">
+  
+    <center><h2><u>Brief Questionnaire</u></h2></center>
+    <hr>
+<table>
+  <td colspan="20" style="width: 80em; padding-bottom: 1em">
+ <p><b>Please complete this short questionnaire about your linguistic background before beginning the experiment.</b><br>
+ Please answer the questions accurately. Your responses will not affect compensation for this HIT.</p>
+</td>
+<p>
+  <tr>
+    <td colspan="2">
+      <p><b>Please select a gender:<font color="red">*</font></b></p>
+    </td> 
+
+    <td colspan="20"><select style="width: 10em; font-size: large;">
+                   <option class = "obligatory" value="female">Female</option>
+                   <option value="male">Male</option>
+                   <option value="trans">Trans</option>
+                   <option value="other">Other</option>
+                   </select>
+    </td>
+  </tr>
+<p> 
+  <tr>
+<td colspan="2"><p><b>Please indicate your handedness:<font color="red">*</font></b></p></td>
+  <td colspan="10"><select style="width: 10em; font-size: large;">
+                   <option class = "obligatory" value="left">Left</option>
+                   <option value="right">Right</option>
+                   <option value="both">Both</option>
+                   </select>
+</td>
+  </tr>
+<tr>
+  <td colspan="2"><p><i>What is your age?<font color="red">*</font></i></p></td>
+  <td colspan="10">
+    <textarea name="age" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><p><i>What is your native language (first language you learned)?<font color="red">*</font></i></p></td>
+  <td colspan="10">
+    <textarea name="natlang" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><p><i>Where did you grow up (state)?<font color="red">*</font></i></p></td>
+  <td colspan="10">
+    <textarea name="state" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><p><i>What language(s) do your parents speak?<font color="red">*</font></i></p></td>
+  <td colspan="5">
+    <textarea name="parentlang" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><p><i>What is your dominant language?<font color="red">*</font></i></p></td>
+  <td colspan="5">
+    <textarea name="domlang" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><p><i>Do you speak any other languages or English dialects?<font color="red">*</font></i></p></td>
+  <td colspan="2">
+    <textarea name="otherlang" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><p><i>What device are you using to complete this experiment (e.g. tablet, phone, laptop)?<font color="red">*</font></i></p></td>
+  <td colspan="2">
+    <textarea name="device" class="obligatory" rows="1" cols="20"></textarea>
+  </td>
+</tr>
+</table>
+    
+<br><br>
+  <p>
+    <input type="text" style="width: 400px; height: 70px; color: red; font-size: large; font-weight: bold;" class="obligatory" name="continue" onfocus="if(this.value == 'To continue, please type: Continue') { this.value = ''; }" value="To continue, please type: Continue"/>
+  </p>
+  <p> Then press Enter to continue!</p>
+</form>

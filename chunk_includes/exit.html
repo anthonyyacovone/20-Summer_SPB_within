@@ -1,0 +1,88 @@
+<head>
+  <title> Experiment Questionaire </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    p {
+      text-align: left;
+      font-size: large;
+    }
+
+    a {
+      text-decoration: none;
+    }
+      
+    
+    body {
+      margin-top: 1em;
+      
+    }
+    
+    textarea {
+      font-size: large; 
+    }
+   
+    input {
+      font-size: large; 
+    }
+    
+</style>
+
+
+
+<script language="javascript" type="text/javascript">
+function randomString() {
+  var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+  var string_length = 8;
+  var randomstring = '';
+  for (var i=0; i<string_length; i++) {
+    var rnum = Math.floor(Math.random() * chars.length);
+    randomstring += chars.substring(rnum,rnum+1);
+  }
+  document.randform.identifier.value = randomstring;
+}
+</script>
+
+
+<p><h3> Amazon identification: </h3> </p>
+<p>We require you to enter your Amazon worker ID and the unique identifier so that we may compensate you for completing this task. <br>
+Be sure to enter the identifier in back at the MTurk webpage that directed you here. <br></p>
+
+
+<table>
+<tr>
+  <td colspan="1"> <p><b> 1. Please enter your Amazon worker ID: </b></p>
+</td>
+</tr>
+  <p></p>
+<tr>
+  <td colspan="1">
+    <textarea name="worker_id" rows="1" cols="20" class="obligatory"></textarea><br><br><br>
+  </td>
+</tr>
+<br>
+
+<tr>
+  <td colspan="1">
+      <p><b> 2. Click on the following button to create your unique identifier. </b></p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>
+    <form name="randform">
+      <p><input type="button" value="Create unique identifier" onClick="randomString();">&nbsp;</p>
+      <p><input type="text" name="identifier" value=""></p>
+    </form>
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td> 
+    <p><b>3. Click below to complete the experiment. Wait until the results have successfully uploaded to the server.<br>
+     Once finished, be sure to paste your identifier into the MTurk page to receive payment. </b></p>
+  </td>
+</tr>
+</table>
+  <br>
+</p>
